@@ -250,9 +250,9 @@ while True:
                 roof_y = house_y
                 roof_height = random.randint(30, 45)
                 filled_polygon("#000000", roof_x, roof_y, house_x, (roof_y - roof_height),
-                               (roof_x + house_width), roof_y)
+                                (roof_x + house_width), roof_y)
                 filled_polygon("#FFFFFF", roof_x+4, roof_y, house_x, (roof_y - roof_height)+4,
-                               (roof_x + house_width)-4, roof_y)
+                            (roof_x + house_width)-4, roof_y)
 
         # функция для крыши
         def draw_wall():
@@ -283,13 +283,13 @@ while True:
 
         # функция для всего дома
         def draw_house():
-             house_or_not = random.randint(2, 4)
-             if house_or_not == 0 or house_or_not == 1:
-                draw_tree()
-             else:
-                draw_roof()
-                draw_wall()
-                draw_window()
+                house_or_not = random.randint(2, 4)
+                if house_or_not == 0 or house_or_not == 1:
+                    draw_tree()
+                else:
+                    draw_roof()
+                    draw_wall()
+                    draw_window()
 
         # вывод домов на экран
         draw_day()
