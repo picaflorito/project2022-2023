@@ -1,5 +1,6 @@
 from drawzero import *
 import random
+import time
 
 while True:
     # отрисовка текста для выбора режима
